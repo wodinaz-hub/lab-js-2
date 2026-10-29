@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="tabs">
+    <button id="st" class="active" onclick="openTab('teachers', 'st')">Вичтелі</button>
+    <button id="ss" onclick="openTab('students', 'ss')">Учні</button>
+    <button id="sl" onclick="openTab('lessons', 'sl')">Предмети</button>
+    </div>
+    <div id="teachers" class="tab-content">
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>ПІБ</th>
+          <th>Предмет</th>
+          <th>Кабінет</th>
+          <th>Стаж</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Балашов Олександр Федорович</td>
+          <td>Інформатика</td>
+          <td>20</td>
+          <td>10</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div id="students" class="tab-content">
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>ПІБ</th>
+          <th>Клас</th>
+          <th>Середній бал</th>
+          <th>Номер Батьків</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Євдокимов Денис Костянтинович</td>
+          <td>10-А</td>
+          <td>10</td>
+          <td>093-96-55-935</td>
+        </tr>
+      </table>
+    </div>
+
+    
+    <div id="lessons" class="tab-content">
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Назва предмета</th>
+          <th>Кількість годин на тиждень</th>
+          <th>Тип кабінету</th>
+          <th>Форма контролю</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Інформатика</td>
+          <td>22</td>
+          <td>Комп'ютерний клас</td>
+          <td>Практична робота</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
