@@ -12,9 +12,22 @@ function openTab(tabId, buttonId) {
 function addRow(rowId){
     const inputRow = document.getElementById(rowId);
     const inputs = inputRow.querySelectorAll("input");
-    
-}
 
+    let cells = "";
+
+    inputs.forEach(input => {
+        cells += `<td>${input.value}</td>`;
+        input.value = "";
+    });
+
+    cells += "<td></td>"
+
+    const newRow = document.createElement("tr");
+    newRow.innerHTML = cells;
+
+    inputRow.before(newRow);
+}
+/*
 function addTeacher() {
     const id = document.getElementById("teacher-id").value;
     const name = document.getElementById("teacher-name").value;
@@ -34,6 +47,6 @@ function addTeacher() {
     document.getElementById("teacher-subject").value = "";
     document.getElementById("teacher-room").value = "";
     document.getElementById("teacher-experience").value = "";
-}
+}*/
 
 openTab("teachers", "st");
