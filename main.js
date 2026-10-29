@@ -27,26 +27,5 @@ function addRow(rowId){
 
     inputRow.before(newRow);
 }
-/*
-function addTeacher() {
-    const id = document.getElementById("teacher-id").value;
-    const name = document.getElementById("teacher-name").value;
-    const subject = document.getElementById("teacher-subject").value;
-    const room = document.getElementById("teacher-room").value;
-    const experience = document.getElementById("teacher-experience").value;
-
-    const newRow = document.createElement("tr");
-
-    newRow.innerHTML = `<td>${id}</td><td>${name}</td><td>${subject}</td><td>${room}</td><td>${experience}</td><td></td>`;
-
-    const inputRow = document.getElementById("teacher-inputs");
-    inputRow.before(newRow);
-
-    document.getElementById("teacher-id").value = "";
-    document.getElementById("teacher-name").value = "";
-    document.getElementById("teacher-subject").value = "";
-    document.getElementById("teacher-room").value = "";
-    document.getElementById("teacher-experience").value = "";
-}*/
 
 openTab("teachers", "st");
