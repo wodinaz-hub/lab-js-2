@@ -9,6 +9,12 @@ function openTab(tabId, buttonId) {
     document.getElementById(buttonId).classList.add("active");
 }
 
+function addRow(rowId){
+    const inputRow = document.getElementById(rowId);
+    const inputs = inputRow.querySelectorAll("input");
+    
+}
+
 function addTeacher() {
     const id = document.getElementById("teacher-id").value;
     const name = document.getElementById("teacher-name").value;
@@ -22,6 +28,12 @@ function addTeacher() {
 
     const inputRow = document.getElementById("teacher-inputs");
     inputRow.before(newRow);
+
+    document.getElementById("teacher-id").value = "";
+    document.getElementById("teacher-name").value = "";
+    document.getElementById("teacher-subject").value = "";
+    document.getElementById("teacher-room").value = "";
+    document.getElementById("teacher-experience").value = "";
 }
 
 openTab("teachers", "st");
